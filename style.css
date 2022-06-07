@@ -1,0 +1,46 @@
+.container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 300px;
+  grid-template-areas:
+    'one two two'
+    'three four five';
+}
+
+.container div {
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 2px;
+  text-align: center;
+}
+
+.one {
+  grid-area: one;
+  /* to center the text veritcally */
+  line-height: 100px;
+}
+
+.two {
+  grid-area: two;
+  /* to center the text veritcally */
+  line-height: 100px;
+}
+
+.three {
+  grid-area: three;
+  /* to center the text veritcally */
+  line-height: 300px;
+}
+
+.four {
+  grid-area: four;
+  /* to center the text veritcally */
+  line-height: 300px;
+}
+
+.five {
+  grid-area: five;
+  /* to center the text veritcally */
+  line-height: 300px;
+}
